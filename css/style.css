@@ -1,1 +1,114 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+:root {
+  --bg: #0d0d0d;
+  --text: #f0ece4;
+  --muted: #888880;
+  --accent: #c8a96e;
+  --border: rgba(200,169,110,0.18);
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* NAV */
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  background: #0d0d0dde;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 5rem 2rem;
+}
+
+.hero-name {
+  font-family: 'DM Serif Display', serif;
+  font-size: 4rem;
+}
+
+.hero-name em {
+  color: var(--accent);
+}
+
+.hero-bio {
+  color: var(--muted);
+  margin: 1rem 0;
+}
+
+/* BUTTONS */
+.btn-primary {
+  background: var(--accent);
+  color: black;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+}
+
+.btn-ghost {
+  border: 1px solid var(--border);
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  color: var(--text);
+}
+
+/* CARDS */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.work-card {
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--text);
+  transition: transform 0.3s;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-thumb-placeholder {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1a1a1a;
+  font-size: 2rem;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-title {
+  font-family: 'DM Serif Display', serif;
+}
