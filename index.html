@@ -9,14 +9,15 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
 
-<!-- CONNECT CSS -->
-<link rel="stylesheet" href="css/styles.css" />
+<!-- LINK CSS -->
+<link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
+<!-- NAV -->
 <nav>
-  <a href="#hero" class="nav-logo">Reiner</a>
+  <a href="#hero" class="nav-logo">Alex Rivera</a>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#works">Works</a></li>
@@ -25,9 +26,10 @@
   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=markreinerpanlilio@gmail.com&su=Job%20Oppurtunity&body=Hi,%20I%20want%20to%20work%20with%20you!" class="nav-cta">Hire Me</a>
 </nav>
 
+<!-- HERO -->
 <div id="hero" class="hero">
   <div class="hero-grid">
-    <div>
+    <div class="hero-left">
       <p class="hero-eyebrow fade-up visible">Available for work</p>
       <h1 class="hero-name fade-up visible delay-1">Reiner<br /><em>Panlilio</em></h1>
       <p class="hero-bio fade-up visible delay-2">
@@ -52,21 +54,73 @@
 
 <div class="divider"></div>
 
+<!-- WORKS -->
 <section id="works">
+  <div class="section-header">
+    <span class="section-label">Works</span>
+    <span class="section-line"></span>
+  </div>
+
+  <div class="works-intro fade-up">
+    <h2 class="section-title">Midterm Tasks</h2>
+    <p class="section-sub">This section showcases midterm tasks.</p>
+  </div>
+
   <div class="cards-grid">
 
-    <!-- OPEN IN NEW TAB -->
-    <a href="Task/midterm-task-1.pdf" target="_blank" class="work-card">
-      <div class="card-thumb-placeholder">01</div>
+    <!-- Card 1 -->
+    <a href="Task/midterm-task-1.pdf" target="_blank" class="work-card fade-up delay-1">
+      <div class="card-thumb-placeholder" style="background: linear-gradient(135deg, #1a1408 0%, #2e2010 100%); color: var(--accent);">01</div>
       <div class="card-body">
+        <span class="card-tag">Midterm Task 1</span>
         <h3 class="card-title">Data Cleaning and Modeling</h3>
+        <p class="card-desc">Lorem ipsum dolor sit amet.</p>
       </div>
     </a>
 
-    <a href="Task/midterm-task-2.pdf" target="_blank" class="work-card">
-      <div class="card-thumb-placeholder">02</div>
+    <!-- Card 2 -->
+    <a href="Task/midterm-task-2.pdf" target="_blank" class="work-card fade-up delay-2">
+      <div class="card-thumb-placeholder" style="background: linear-gradient(135deg, #0d1a14 0%, #0e2a1c 100%); color: #4eb87a;">02</div>
       <div class="card-body">
+        <span class="card-tag">Midterm Task 2</span>
         <h3 class="card-title">Power Query Modeling</h3>
+        <p class="card-desc">Lorem ipsum dolor sit amet.</p>
+      </div>
+    </a>
+
+  </div>
+
+  <div class="works-intro fade-up" style="margin-top: 60px;">
+    <h2 class="section-title">Practice Tasks</h2>
+    <p class="section-sub">This section contains practice tasks.</p>
+  </div>
+
+  <div class="cards-grid">
+
+    <!-- Card 3 -->
+    <a href="Task/practice-task-2.pdf" target="_blank" class="work-card fade-up delay-1">
+      <div class="card-thumb-placeholder" style="background: linear-gradient(135deg, #1a1408 0%, #2e2010 100%); color: var(--accent);">02</div>
+      <div class="card-body">
+        <span class="card-tag">Practice Task 2</span>
+        <h3 class="card-title">Demo Data Analysis</h3>
+      </div>
+    </a>
+
+    <!-- Card 4 -->
+    <a href="Task/practice-task-3.pdf" target="_blank" class="work-card fade-up delay-2">
+      <div class="card-thumb-placeholder" style="background: linear-gradient(135deg, #0d1a14 0%, #0e2a1c 100%); color: #4eb87a;">03</div>
+      <div class="card-body">
+        <span class="card-tag">Practice Task 3</span>
+        <h3 class="card-title">Advanced Excel Functions</h3>
+      </div>
+    </a>
+
+    <!-- Card 5 -->
+    <a href="Task/practice-task-4.pdf" target="_blank" class="work-card fade-up delay-3">
+      <div class="card-thumb-placeholder" style="background: linear-gradient(135deg, #0e0d1a 0%, #18162e 100%); color: #9b8fe8;">04</div>
+      <div class="card-body">
+        <span class="card-tag">Practice Task 4</span>
+        <h3 class="card-title">Data Cleaning using Power Query</h3>
       </div>
     </a>
 
